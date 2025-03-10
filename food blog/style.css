@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    user-select: none;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(212, 212, 201);
+}
+
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#home {
+    background: #ece8eb;
+    color: rgb(223, 134, 134);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Recipe Section */
+#recipes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#recipes h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.recipe-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe {
+    width: 30%;
+    background-color: rgb(150, 26, 207);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 6, 6, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe h3 {
+    font-size: 24px;
+    color: blueviolet;
+    margin-top: 15px;
+}
+
+.recipe p {
+    font-size: 16px;
+    color: #450555;
+}
+
+.recipe a {
+    color: #3f4d52;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f0eaea;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #333333;
+
+    .image-one {
+        width: 200px; /* You can change this to your desired width */
+        height: auto; /* To keep the aspect ratio */
+    }
+    
+    .image-two {
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #10c2e2;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #181313;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #b997e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer Section */
+footer {
+    background-color: #19fcfc;
+    color: rgb(24, 18, 18);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.recipe {
+    /* width: 100px;
+    height: 100px; */
+    background-color: rgb(228, 26, 177);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {
+        background-color: rgb(235, 21, 128);
+    }
+
+    to {
+        background-color: rgb(19, 196, 143);
+    }
+    /* Add this to style.css */
+
+/* For the logo animation */
+.logo h1 {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; /* fade in over 2 seconds */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* For the hero image animation */
+.hero img {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 1.5s ease-in-out 0.5s forwards; /* Fade in + scale up */
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* For footer slide-up animation */
+footer {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 1s ease-in-out 1s forwards; /* Slide up with delay */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+}
